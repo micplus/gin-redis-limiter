@@ -33,8 +33,8 @@ func main() {
     limit := 30
     slidingWindow := time.Second * 5
     banTime := time.Second * 15
-    r.Use(limiter.Limiter(rdb, "test", 
-        limit, slidingWindow, 
+    r.Use(limiter.Limiter(rdb, 
+        "test", limit, slidingWindow, 
         "testban", banTime))
     // r.GET("/", SomeHandler)
     // ...
