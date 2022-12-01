@@ -1,10 +1,11 @@
 package limiter_test
 
 import (
-	"limiter"
 	"net/http"
 	"testing"
 	"time"
+
+	limiter "github.com/micplus/gin-redis-limiter"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v9"

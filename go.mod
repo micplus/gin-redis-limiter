@@ -1,4 +1,4 @@
-module limiter
+module github.com/micplus/gin-redis-limiter
 
 go 1.19
 
