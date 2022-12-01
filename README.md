@@ -31,8 +31,8 @@ func main() {
     // if some IP requested for over 30 times within 5 seconds, 
     // ban it for 15 seconds.
     limit := 30
-	slidingWindow := time.Second * 5
-	banTime := time.Second * 15
+    slidingWindow := time.Second * 5
+    banTime := time.Second * 15
     r.Use(limiter.Limiter(rdb, "test", 
         limit, slidingWindow, 
         "testban", banTime))
